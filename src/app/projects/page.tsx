@@ -49,7 +49,7 @@ export default function Projects() {
         {projects
           .filter(p => p.domain.includes(SelectedDomain))
           .map(p=>(
-            <div className="border border-white/15 p-4 rounded-xl hover:bg-gray-700"key={p.name}>
+            <div className="border border-white/15 p-4 rounded-xl hover:bg-gray-700 duration-200"key={p.name}>
               <h3>{p.name}</h3><br></br>
               <p>{p.description}</p><br></br>
               <a href={p.github} target="_blank">
