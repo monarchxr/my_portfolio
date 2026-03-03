@@ -16,25 +16,25 @@ export default function Projects() {
       <div className="w-68 h-full border-r border-white/15 p-6">
       <h2 className="text-center underline">Select Domain</h2><br></br>
 
-      <div className="flex flex-col gap-10 text-center">
+      <div className="flex flex-col gap-10">
         <div>
-          <h3 className="cursor-pointer hover:bg-gray-700 rounded-xl transition-colors duration-200"onClick={() => setSelectedDomain("ML")}>Machine Learning</h3>
+          <h3 className="cursor-pointer hover:bg-gray-700 transition-colors duration-200"onClick={() => setSelectedDomain("ML")}>Machine Learning</h3>
         </div>
 
         <div>
-          <h3 className="cursor-pointer hover:bg-gray-700 rounded-xl transition-colors duration-200"onClick={() => setSelectedDomain("DS")}>Data Science</h3>
+          <h3 className="cursor-pointer hover:bg-gray-700 transition-colors duration-200"onClick={() => setSelectedDomain("DS")}>Data Science</h3>
         </div>
 
         <div>
-          <h3 className="cursor-pointer hover:bg-gray-700 rounded-xl transition-colors duration-200"onClick={() => setSelectedDomain("Distributed")}>Distributed</h3>
+          <h3 className="cursor-pointer hover:bg-gray-700 transition-colors duration-200"onClick={() => setSelectedDomain("Distributed")}>Distributed</h3>
         </div>
 
         <div>
-          <h3 className="cursor-pointer hover:bg-gray-700 rounded-xl transition-colors duration-200"onClick={() => setSelectedDomain("Frontend")}>Frontend</h3>
+          <h3 className="cursor-pointer hover:bg-gray-700 transition-colors duration-200"onClick={() => setSelectedDomain("Frontend")}>Frontend</h3>
         </div>
 
         <div>
-          <h3 className="cursor-pointer hover:bg-gray-700 rounded-xl transition-colors duration-200"onClick={() => setSelectedDomain("Miscellaneous")}>Miscellaneous</h3>
+          <h3 className="cursor-pointer hover:bg-gray-700 transition-colors duration-200"onClick={() => setSelectedDomain("Miscellaneous")}>Miscellaneous</h3>
         </div>
       </div>
       </div>
