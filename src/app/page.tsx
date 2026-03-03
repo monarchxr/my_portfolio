@@ -5,8 +5,9 @@ export default function Home(){
   return(
     <main className="flex flex-col h-screen items-center justify-center gap-20">
       <div className="text-center">
-        <h2>Raunak Jais</h2>
-        <p>Junior year CS undergrad, studying DS and ML, dabbling in concurrency</p>
+        <h2 className="underline">Raunak Jais</h2>
+        <p>Junior year CS undergrad</p>
+        <p>Studying DS and ML, dabbling in concurrency</p>
       </div>
 
       <div className="flex gap-2">
