@@ -8,19 +8,19 @@ export default function Socials() {
 
     <div className="flex flex-row gap-20 items-center justify-center">
       <div>
-        <a href="https://linkedin.com/in/raunak-jais/" target="_blank">
+        <a href="https://linkedin.com/in/raunak-jais/" target="_blank" rel="noopener noreferrer">
           <img src="/linkedinlogo.svg" className="icon cursor-pointer w-20 h-20" />
         </a>
       </div>
 
       <div>
-        <a href="https://github.com/monarchxr" target="_blank">
+        <a href="https://github.com/monarchxr" target="_blank" rel="noopener noreferrer">
           <img src="/githublogo.svg" className="icon cursor-pointer w-20 h-20" />
         </a>
       </div>
 
       <div>
-        <a href="https://x.com/raunak_jais" target="_blank">
+        <a href="https://x.com/raunak_jais" target="_blank" rel="noopener noreferrer">
           <img src="/twitter-x.svg" className="icon cursor-pointer w-20 h-20" />
         </a>
       </div>
