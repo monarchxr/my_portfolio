@@ -22,7 +22,7 @@ export const projects = [
 
     {
         name: "Resume Skill Gap Analyzer",
-        description: "Built a resume parser and skill gap analyzer, using Grok AI for analysis",
+        description: "Building a resume parser and skill gap analyzer, using Grok AI for analysis",
         domain: ["ML"],
         github: "https://github.com/monarchxr/MiniProject3Y",
     },

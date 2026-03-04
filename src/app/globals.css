@@ -1,9 +1,45 @@
 @import "tailwindcss";
 
+:root{
+  --bg: #0d0d0d;
+  --text: #e8e8e8;
+  --hover: #374151;
+  --border: rgba(255,255,255,0.15);
+  --shadow-hover: rgba(220,20,60,0.6);
+}
+
+[data-theme="light"]{
+  --bg: #ffffff;
+  --text: #0d0d0d;
+  --hover: #9ca3af;
+  --border: rgba(0,0,0,0.15);
+  --shadow-hover: rgba(0,149,149,0.6);
+}
+
+[data-theme="light"] .icon{
+  filter:none;
+}
+
+.icon{
+  filter: invert(1);
+}
+
 body {
-  background: #0d0d0d;
-  color: #e8e8e8;
+  background-color: var(--bg);
+  color: var(--text);
   font-family: var(--font-mono);
+}
+
+.hover-bg:hover{
+  background-color: var(--hover);
+}
+
+.hover-shadow:hover{
+  box-shadow: 0 0 20px var(--shadow-hover);
+}
+
+.border-theme{
+  border-color: var(--border);
 }
 
 ::-webkit-scrollbar{

@@ -23,7 +23,7 @@ export default function About() {
       <p className="underline">My name is Raunak Jais.</p>
       <p>I am {calculateAge("2005-01-31")} years old.</p>
       <p>Currently majoring in Computer Science Engineering, with a specialization in Data Science.</p>
-      <p></p>
+      <p>You may also know me by my online alias: monarchxr</p>
     </div>
 
     <div className="text-center">

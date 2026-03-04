@@ -6,23 +6,23 @@ import Widget from "../components/Widget"
 export default function Skills() {
   const [SelectedTrack, setSelectedTrack] = useState("")
   return <main className="flex flex-col h-screen items-center">
-    <div className="flex flex-col items-center justify-center pt-4">
+    <div className="flex flex-col items-center justify-center pt-8">
       <h2>My skill playlist {"<3"}</h2>
     </div>
 
     <div className={SelectedTrack ? "flex flex-row flex-1 items-center" : "flex flex-col items-center justify-center flex-1"}>
-      <div className={SelectedTrack ? "w-[30%] border-r border-white/15 p-6":""}>
+      <div className={SelectedTrack ? "w-[30%] border-r border-theme p-6":""}>
         <h1>Select a skill track to explore</h1><br></br>
 
-        <div className="cursor-pointer hover:bg-gray-700 duration-200"onClick={() => setSelectedTrack("Languages")}>
+        <div className="cursor-pointer hover-bg duration-200"onClick={() => setSelectedTrack("Languages")}>
           <h4>Languages</h4>
         </div>
 
-        <div className="cursor-pointer hover:bg-gray-700 duration-200"onClick={() => setSelectedTrack("ML & DS")}>
+        <div className="cursor-pointer hover-bg duration-200"onClick={() => setSelectedTrack("ML & DS")}>
           <h4>ML & DS</h4>
         </div>
 
-        <div className="cursor-pointer hover:bg-gray-700 duration-200"onClick={() => setSelectedTrack("Systems & Tools")}>
+        <div className="cursor-pointer hover-bg duration-200"onClick={() => setSelectedTrack("Systems & Tools")}>
           <h4>Systems & Tools</h4>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Skills() {
 
         {SelectedTrack==="Systems & Tools" &&
           <div>
-            <p>Dev Tools: Git, GitHub, VSCode, PyCharm, IntelliJ</p>
+            <p>Dev Tools: Git, GitHub, VSCode, IntelliJ</p>
             <p>Concepts: Concurrency, Worker Pools, REST APIs</p>
           </div>
         }
@@ -54,7 +54,7 @@ export default function Skills() {
     </div>
 
     <div className="mb-6">
-      <p className="cursor-pointer hover:bg-gray-700 duration-200"onClick={() => setSelectedTrack("")}>Click here to go to tracklist</p>
+      <p className="cursor-pointer hover-bg duration-200"onClick={() => setSelectedTrack("")}>Click here to go to tracklist</p>
     </div>
 
     <Widget href="/" label="Return to Home" />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "./components/ThemeProvider";
 
 const ibmplexMono = IBM_Plex_Mono({
   variable: "--font-mono",
@@ -11,6 +12,7 @@ const ibmplexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Raunak's Dev Portfolio",
   description: "Created with sheer creativity woohoo",
+  icons: "/club-card.svg",
 };
 
 export default function RootLayout({
@@ -23,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${ibmplexMono.variable} antialiased`}
       >
-        {children}
+      <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
